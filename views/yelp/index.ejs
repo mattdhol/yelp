@@ -1,0 +1,27 @@
+<%- include('../partials/navbar') %>
+
+<body>
+
+        <h3>All Restaurants</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Restaurant Name</th>
+              <th>Restaurants Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <% restaurant.forEach(function(r) { %>
+                <tr>
+                <td><%= r.name %></td>
+                <td><%= r.description %></td>
+                </tr>
+                
+                <% }); %>
+
+            </tbody>     
+        </table>
+
+</body>
+</html>
